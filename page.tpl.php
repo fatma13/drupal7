@@ -73,25 +73,33 @@
  * @ingroup templates
  */
 ?>
-<header role="banner" id="page-header">
-    <?php if (!empty($site_slogan)): ?>
+
+
+<header id="header" class="transparent">
+
+ <div class="header-top">
+      
+        <div class="header-top-menu container">
+            
+        <div class="top-menu">
+            <?php if (!empty($site_slogan)): ?>
       <p class="lead"><?php print $site_slogan; ?></p>
     <?php endif; ?>
 
     <?php print render($page['header']); ?>
-  </header> <!-- /#page-header -->
-<header id="navbar" role="banner" class="<?php print $navbar_classes; ?>">
-  <div class="<?php print $container_class; ?>">
-    <div class="navbar-header">
-      <?php if ($logo): ?>
+        </div>
+        </div>
+    </div>
+
+ <div class="header-in clearfix">
+  <div class="header-in-flex container">
+     <ul class="list-top col-md-4"><li> <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
         </a>
-      <?php endif; ?>
+      <?php endif; ?></li></ul>
 
-      <?php if (!empty($site_name)): ?>
-        <a class="name navbar-brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>"><?php print $site_name; ?></a>
-      <?php endif; ?>
+      
 
       <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
@@ -101,11 +109,11 @@
           <span class="icon-bar"></span>
         </button>
       <?php endif; ?>
-    </div>
+  
 
     <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
       <div class="navbar-collapse collapse" id="navbar-collapse">
-        <nav role="navigation">
+        <nav role="navigation" class="navigation" id="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
@@ -119,6 +127,7 @@
       </div>
     <?php endif; ?>
   </div>
+    </div>
 </header>
 
 <div class="main-container <?php print $container_class; ?>">
