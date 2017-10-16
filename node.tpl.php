@@ -103,6 +103,9 @@
       hide($content['comments']);
       hide($content['links']);
       print render($content);
+
+      echo "1";
+
     ?>
   </div>
 
