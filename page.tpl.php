@@ -101,7 +101,13 @@
 
       
 
-      <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+      
+  
+
+    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
+     
+        <nav role="navigation"class="navbar navbar-default col-md-8 navigation" id="navigation">
+          <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
           <span class="sr-only"><?php print t('Toggle navigation'); ?></span>
           <span class="icon-bar"></span>
@@ -109,11 +115,6 @@
           <span class="icon-bar"></span>
         </button>
       <?php endif; ?>
-  
-
-    <?php if (!empty($primary_nav) || !empty($secondary_nav) || !empty($page['navigation'])): ?>
-      <div class="navbar-collapse collapse" id="navbar-collapse">
-        <nav role="navigation" class="navigation" id="navigation">
           <?php if (!empty($primary_nav)): ?>
             <?php print render($primary_nav); ?>
           <?php endif; ?>
@@ -124,7 +125,7 @@
             <?php print render($page['navigation']); ?>
           <?php endif; ?>
         </nav>
-      </div>
+   
     <?php endif; ?>
   </div>
     </div>
