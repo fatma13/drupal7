@@ -104,7 +104,7 @@
       hide($content['links']);
       print render($content);
 
-      echo "1";
+    
       echo "3";
 
     ?>
