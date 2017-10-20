@@ -17,9 +17,9 @@ h1,h2,h3,h4,h5,h6,p,li,ul,hr,input{
             list-style-type: none;
     list-style: none;
 }
-a{
-    text-decoration: none;
-    color: inherit;
+a {
+    text-decoration: none !important;
+    color: inherit !important;
 }
 p {
     font-family: Poppins;
@@ -264,7 +264,7 @@ form.search-form input {
     padding: 5px;
     color: #373737;
 }
-.content-title {
+.content-title,h2.block-title {
     font-size: 27px;
     font-weight: 700;
     color: #303030;
@@ -315,7 +315,7 @@ hr.orange-hr {
     float: none;
     padding-right: 35px;
 }
-section.services-section {
+section#block-views-service-acceuil-block-1 {
     padding: 70px 0;
     background: url(../images/serv.png);
     background-size: cover;
@@ -373,7 +373,10 @@ hr.grey-hr {
     border: 0;
     transition: width 0.2s ease;
 }
-.service-title .slide-arrow {
+.service-p {
+    position: relative;
+}
+.service-title .slide-arrow,.service-p .slide-arrow {
     position: absolute;
     right: 0;
     bottom: -13px;
@@ -390,7 +393,7 @@ hr.grey-hr {
     border-color: #f4b213;
     color: #fff;
 }
-.services-section > h2 , .references-section > h2 , .partners-section > h2 {
+.services-section > h2 , .references-section > h2 , .partners-section > h2,h2.block-title {
     text-align: center;
     color: #f4b213;
     text-transform: uppercase;
@@ -400,7 +403,7 @@ hr.grey-hr {
     margin: 0 auto;
     margin-bottom: 10px;
 }
-.services-section > p ,.partners-section > p  {
+.services-section > p ,.partners-section > p ,.view-header p {
     text-align: center;
     color: #fff;
     padding-bottom: 20px;
@@ -1276,6 +1279,28 @@ ul.etapes-list.etape-seo {
 }
 ul.etapes-list.etape-seo li {
     width: 28%;
+}
+.service-p p {
+    font-size: 13px;
+    padding: 10px 0;
+    margin-left: 88px;
+}
+.service-p hr {
+    margin-left: 88px;
+    max-width: 66%;
+}
+h2.content-title:after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #1b7fbe;
+    display: block;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+.field-content p {
+    font-size: 14px;
+    padding-bottom: 10px;
 }
 @media (min-width:992px) and (max-width:1199px){
     .content-title {
