@@ -25,3 +25,7 @@ regions[page_bottom]    = 'Page bottom'
 ;;;;;;;;;;;;;;;;;;;;;
 
 stylesheets[all][] = css/style.css
+
+; JavaScript
+; --------------
+scripts[] = css/jquery-1.11.3.min.js

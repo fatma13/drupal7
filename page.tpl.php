@@ -130,7 +130,11 @@
   </div>
     </div>
 </header>
-
+ <?php if (!empty($page['slider_lets'])): ?>
+<div class="slide">
+   <?php print render($page['slider_lets']); ?>
+</div>
+    <?php endif; ?>
 <div class="main-container <?php print $container_class; ?>">
 
   
