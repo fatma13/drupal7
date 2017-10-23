@@ -27,9 +27,13 @@ regions[page_bottom]    = 'Page bottom'
 
 stylesheets[all][] = css/font-awesome/css/font-awesome.css
 stylesheets[all][] = css/font-awesome/css/font-awesome.min.css
+stylesheets[all][] = css/font-awesome/css/owl.carousel.css
+stylesheets[all][] = css/font-awesome/css/owl.carousel.min.css
+stylesheets[all][] = css/font-awesome/css/owl.theme.css
 stylesheets[all][] = css/style.css
 
 
 ; JavaScript
 ; --------------
 scripts[] = css/jquery-1.11.3.min.js
+scripts[] = js/owl.carousel.js
