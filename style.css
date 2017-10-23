@@ -437,12 +437,12 @@ hr.grey-hr {
     display: block;
     text-align: center;
 }
-.owl-demo1 .item {
+.item-reference {
     padding: 10px;
     border: 1px solid #eaeefb;
     margin: 3% 1%;
 }
-.owl-demo1 .item:hover {
+.item-reference:hover {
     -webkit-box-shadow: 0px 0px 10px 0px rgba(153,169,191,1);
 -moz-box-shadow: 0px 0px 10px 0px rgba(153,169,191,1);
 box-shadow: 0px 0px 10px 0px rgba(153,169,191,1);
