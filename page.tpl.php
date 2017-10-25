@@ -93,10 +93,10 @@
 
  <div class="header-in clearfix">
   <div class="header-in-flex container">
-     <ul class="list-top col-md-4"><li> <?php if ($logo): ?>
+     <ul class="list-top col-md-4"><li><h1 id="logo"> <?php if ($logo): ?>
         <a class="logo navbar-btn pull-left" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>">
           <img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" />
-        </a>
+        </a></h1>
       <?php endif; ?></li></ul>
 
       
@@ -162,11 +162,18 @@
       <?php if (!empty($tabs)): ?>
         <?php print render($tabs); ?>
       <?php endif; ?>
-   
+ 
       <?php if (!empty($action_links)): ?>
         <ul class="action-links"><?php print render($action_links); ?></ul>
       <?php endif; ?>
       <?php print render($page['content']); ?>
+      <?php if (!empty($page['newsletter'])): ?>
+     <div class="newsletter">
+      <div class="container">
+        <?php print render($page['newsletter']); ?>
+      </div>
+      </div>  <!-- /#sidebar-second -->
+    <?php endif; ?>
     </section>
 
     <?php if (!empty($page['sidebar_second'])): ?>

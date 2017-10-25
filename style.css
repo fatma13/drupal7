@@ -30,9 +30,8 @@ body{
     font-family: 'Rajdhani';
         color: #99a9bf;
 }
-section {
+.about-section ,.references-section {
     padding: 70px 0;
-        background: #fff;
 }
 div#wrapper {
         background: #fff;
@@ -167,11 +166,17 @@ nav#navigation ul li:first-child a:before{
     text-transform: uppercase;
        font-size: 44px;
            font-weight: 700;
+               position: absolute;
+    top: 75px;
+    right: 210px;
 }
 span.title-meduim-slide {
     color: #1278bb;
     font-size: 30px;
         font-weight: 700;
+            position: absolute;
+    top: 126px;
+    right: 210px;
 }
 span.para-slide {
       color: #99a9bf;
@@ -180,6 +185,18 @@ span.para-slide {
     font-size: 16px;
     display: block;
     line-height: 22px;
+        position: absolute;
+    top: 170px;
+    width: 343px;
+    right: 200px;
+}
+h1.page-header {
+    padding: 20px 0;
+    background: url(../images/titre.png);
+    padding: 60px 0;
+    background-size: cover;
+    background-position: 0;
+    color: #fff;
 }
 .slide-arrow {
     float: right;
@@ -189,6 +206,7 @@ span.para-slide {
     border-radius: 50%;
         margin-top: 42px !important;
 }
+
 /* *********************fin slider style ********************************* */
 .non-padding{
     padding: 0;
@@ -412,7 +430,7 @@ hr.grey-hr {
      font-size: 14px;
 }
 
-.references-section > p {
+.references-section > .view-header p {
     text-align: center;
     color: #99a9bf;
     padding-bottom: 20px;
@@ -518,11 +536,23 @@ box-shadow: 0px 0px 10px 0px rgba(153,169,191,1);
     color: #fff;
     font-size: 27px;
 }
-section.newsletter {
+section.newsletter, .newsletter {
     background: url(../images/newsletter.png);
     background-size: cover;
-        padding: 30px 0;
     background-position: 50%;
+}
+section#block-newsletter-newsletter-subscribe {
+    padding: 30px 0;
+    background: transparent;;
+}
+section#block-newsletter-newsletter-subscribe h2.block-title:after {
+    content: "";
+    width: 50px;
+    height: 4px;
+    background: #1b7fbe;
+    display: block;
+    border-radius: 5px;
+    margin-top: 10px;
 }
 input#wpoi_email {
     border: 0;
@@ -535,21 +565,29 @@ input#wpoi_email {
     width: 100%;
     border-radius: 20px;
 }
-button {
-    position: absolute;
-    right: 12px;
+div#subscribe {
+    position: relative;
+}
+input#edit-email {
+    border-radius: 15px;
+}
+button#edit-newsletter-submit:after {
+    content: "\f054";
+    font-family: font;
+    font-family: FontAwesome;
+    font-style: normal;
+    font-weight: normal;
+    text-decoration: inherit;
+    border-radius: 50%;
+    color: #faab10;
+}
+button#edit-newsletter-submit {
+    border-radius: 50%;
+    border: 2px solid #005ba6;
     background: transparent;
-    border: 0;
-    bottom: 1px;
-}
-button i.slide-arrow {
-    padding: 7px 9px 7px 11px;
-    background: #1379bb;
-}
-button i.slide-arrow:hover {
-    background: #f4b213;
-    border-color: #f4b213;
-    color: #fff;
+    position: absolute;
+    top: -50px;
+    right: 0;
 }
 .partners-images {
    text-align: center;
@@ -1301,6 +1339,23 @@ h2.content-title:after {
 .field-content p {
     font-size: 14px;
     padding-bottom: 10px;
+}
+section.block-newsletter h2.block-title {
+    float: left;
+    width: 53%;
+    color: #fff;
+    text-align: left;
+}
+form#newsletter-subscribe-form {
+    float: left;
+    margin: 20px 0;
+    width: 36%;
+}
+.slide section {
+    padding: 0;
+}
+.slide h2 {
+    display: none;
 }
 @media (min-width:992px) and (max-width:1199px){
     .content-title {
