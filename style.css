@@ -91,8 +91,7 @@ nav#navigation ul li {
     color: #99a9bf;
 }
 nav#navigation ul li:last-child {
-    margin-right: 0px;
-        padding: 10px 0;
+   
 }
 nav#navigation ul li.active a {
     color: #1278bb;
@@ -205,6 +204,10 @@ h1.page-header {
     color: #f4b213;
     border-radius: 50%;
         margin-top: 42px !important;
+}
+.float-left-image {
+    float: left;
+    padding: 20px;
 }
 
 /* *********************fin slider style ********************************* */

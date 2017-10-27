@@ -36,6 +36,5 @@ stylesheets[all][] = css/style.css
 
 ; JavaScript
 ; --------------
-
 scripts[] = js/owl.carousel.js
 scripts[] = js/script.js
